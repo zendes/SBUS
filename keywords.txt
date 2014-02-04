@@ -1,0 +1,14 @@
+SBUS  KEYWORD1
+
+begin KEYWORD2
+process KEYWORD2
+getChannel  KEYWORD2
+getNormalizedChannel  KEYWORD2
+getFailsafeStatus KEYWORD2
+getFrameLoss  KEYWORD2
+getGoodFrames KEYWORD2
+getLostFrames KEYWORD2
+getDecoderErrorFrames KEYWORD2
+
+SBUS_FAILSAFE_INACTIVE LITERAL1
+SBUS_FAILSAFE_ACTIVE LITERAL1
