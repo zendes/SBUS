@@ -9,8 +9,7 @@
 #define SBUS_ENDBYTE           0x00
 
 
-class SBUS
-{
+class SBUS {
 	public:
 		SBUS(HardwareSerial & serial) : _serial (serial) {}
 		void begin();
