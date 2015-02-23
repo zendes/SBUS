@@ -33,7 +33,7 @@ void SBUS::begin(bool useTimer) {
 void SBUS::process() {
 	static byte buffer[25];
 	static byte buffer_index = 0;
-	
+
 	while (_serial.available()) {
 		byte rx = _serial.read();
 		if (buffer_index == 0 && rx != SBUS_STARTBYTE) {
@@ -41,7 +41,7 @@ void SBUS::process() {
 			_decoderErrorFrames++;
 			continue;
 		}
-		
+
 		buffer[buffer_index++] = rx;
 
 		if (buffer_index == 25) {
@@ -52,7 +52,7 @@ void SBUS::process() {
 				continue;
 			}
 			_goodFrames++;
-			
+
 			_channels[0]  = ((buffer[1]    |buffer[2]<<8)                 & 0x07FF);
 			_channels[1]  = ((buffer[2]>>3 |buffer[3]<<5)                 & 0x07FF);
 			_channels[2]  = ((buffer[3]>>6 |buffer[4]<<2 |buffer[5]<<10)  & 0x07FF);
