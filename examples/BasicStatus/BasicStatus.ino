@@ -16,7 +16,7 @@ ISR(TIMER2_COMPA_vect)
 
 void loop()
 {
-  delay(1000);
+  delay(300);
   printSBUSStatus();
 }
 
@@ -62,8 +62,18 @@ void printSBUSStatus()
   if (sbus.getFailsafeStatus() == SBUS_FAILSAFE_INACTIVE) {
     Serial.println("Not Active");
   }
-  
+
   Serial.print("Data loss on connection: ");
   Serial.print(sbus.getFrameLoss());
   Serial.println("%");
+
+  Serial.print("Frames: ");
+  Serial.print(sbus.getGoodFrames());
+  Serial.print(" / ");
+  Serial.print(sbus.getLostFrames());
+  Serial.print(" / ");
+  Serial.println(sbus.getDecoderErrorFrames());
+
+  Serial.print("Time diff: ");
+  Serial.println(millis() - sbus.getLastTime());
 }
