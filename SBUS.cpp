@@ -82,6 +82,8 @@ void SBUS::process() {
 			if ((buffer[23] >> 2) & 0x0001) {
 				_lostFrames++;
 			}
+
+			_lastGoodFrame = millis();
 		}
 	}
 }
@@ -120,4 +122,8 @@ long SBUS::getLostFrames() {
 
 long SBUS::getDecoderErrorFrames() {
 	return _decoderErrorFrames;
+}
+
+long long SBUS::getLastTime() {
+	return _lastGoodFrame;
 }
