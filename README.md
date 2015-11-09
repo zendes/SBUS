@@ -8,6 +8,8 @@ I used the following sources of info to write it:
 
 To connect this to your Arduino, you'll need an inverter cable such as http://www.hobbyking.com/hobbyking/store/__24523__ZYX_S_S_BUS_Connection_Cable.html, or you can build your own using a TTL inverter or the schematic in the included SBUS_inverter.png file.
 
+!(correct inverter)[https://github.com/red-green/SBUS/blob/master/SBUS_inverter.png]
+
 Basic Installation
 ------------------
 ```
