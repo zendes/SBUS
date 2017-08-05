@@ -1,0 +1,22 @@
+{
+  "name": "SBUS",
+  "keywords": "futaba, sbus, rc, remote control",
+  "description": "Futaba SBUS library for interfacing with SBUS-compatible receivers",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/zendes/SBUS.git"
+  },
+  "authors":
+  [
+    {
+      "name": "Dennis Marinus",
+      "email": "dennis@marinus.nu",
+      "maintainer": true
+    }
+  ],
+  "dependencies":
+  "version": "0.0.1",
+  "frameworks": "arduino",
+  "platforms": "*"
+}
