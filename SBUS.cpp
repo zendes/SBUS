@@ -36,7 +36,7 @@ void SBUS::process() {
 
 	while (_serial.available()) {
 		byte rx = _serial.read();
-		if (buffer_index == 0 && rx != SBUS_STARTBYTE) {
+        if (buffer[24] != SBUS_ENDBYTE && buffer[24] != SBUS2_ENDBYTE0 && buffer[24] != SBUS2_ENDBYTE1 && buffer[24] != SBUS2_ENDBYTE2 && buffer[24] != SBUS2_ENDBYTE3) {
 			//incorrect start byte, out of sync
 			_decoderErrorFrames++;
 			continue;

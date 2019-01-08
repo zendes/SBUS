@@ -7,6 +7,10 @@
 #define SBUS_FAILSAFE_ACTIVE   1
 #define SBUS_STARTBYTE         0x0f
 #define SBUS_ENDBYTE           0x00
+#define SBUS2_ENDBYTE0         0x04
+#define SBUS2_ENDBYTE1         0x14
+#define SBUS2_ENDBYTE2         0x24
+#define SBUS2_ENDBYTE3         0x34
 
 
 class SBUS {
