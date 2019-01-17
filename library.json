@@ -3,18 +3,12 @@
   "keywords": "futaba,sbus,sbus2,rc,remote control",
   "description": "Futaba SBUS library for interfacing with SBUS-compatible receivers",
   "authors":
-  [
-    {
-      "name": "Dennis Marinus",
-      "email": "dennis@marinus.nu",
-      "url": "https://github.com/zendes/SBUS",
-      "maintainer": true
-    },
-    {
-      "name": "Roy van der Kraan",
-      "url": "https://github.com/Troynica/SBUS"
-    }
-  ],
+  {
+    "name": "Dennis Marinus",
+    "email": "dennis@marinus.nu",
+    "url": "https://github.com/zendes/SBUS",
+    "maintainer": true
+  },
   "repository":
   {
     "type": "git",
