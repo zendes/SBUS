@@ -75,5 +75,5 @@ void printSBUSStatus()
   Serial.println(sbus.getDecoderErrorFrames());
 
   Serial.print("Time diff: ");
-  Serial.println(millis() - sbus.getLastTime());
+  Serial.println(millis() - (uint32_t)sbus.getLastTime());
 }
